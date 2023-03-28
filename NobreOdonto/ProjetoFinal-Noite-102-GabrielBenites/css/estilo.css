@@ -1,0 +1,477 @@
+@charset 'utf-8';
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Sanchez',serif;
+    border: none;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    font-size: 1.9em;
+}
+
+
+body{
+    background-color: #89dde0 ;
+}
+
+#topo,#banner,#corpo,#inscrevase,#rodape{
+    float: left;
+}
+
+#topo{
+    width: 100%;
+    background-color: white;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/Logo.png);
+    background-position: center;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    float: left;
+    margin: 2%;
+    
+}
+
+#btn-menu{
+    width: 50px;
+    height: 50px;
+    background-color: #89dde0 ;
+    border-radius: 7px;
+    float: right;
+    color: white;
+    margin: 3%;
+    font-size: 1.2em;
+
+}
+
+#menu{
+    width: 100%;
+    height: 0%;
+    background-color: #9a99c2;
+    position: fixed;
+    overflow: hidden;
+    
+}
+#menu:target{
+    height: 100%;
+}
+
+#btn-fechar{
+    float: right;
+    font-size: 2em;
+    margin-top: 16px;
+    margin-right: 18px;
+}
+
+#menu ul{
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#menu ul li{
+    padding: 7% 5%;
+    font-weight: bold;
+}
+
+#menu ul li:hover{
+    background-color: white;
+}
+
+
+
+
+#banner{
+    width: 100%;
+    background-image: url(../img/img11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #9a99c2;
+    text-shadow: 0px 0px 1px #000;
+}
+
+#banner h1,h2{
+    padding: 2%;
+    font-size: 1.5em;
+}
+#banner h1{
+    font-size: 1.9em;
+    font-family: 'Sanchez',serif;
+    
+}
+
+
+
+
+#banner .btn-m-c{
+
+        width: 25%;
+        height: 45px;
+        background: #89dde0;
+        border-color: #9a99c2;
+        font-family: 'nerislight', sans-serif;
+        margin-top: .5rem;
+        margin-bottom: 5px;
+        border-radius: 9px;
+        font-size: 1.2em;
+        font-weight: bold;
+        align-items: center;
+        color: #fff;
+        
+
+}
+
+
+#corpo{
+    width: 100%;
+    padding: 1% 1%;
+}
+
+
+#corpo figure{
+    width: 100%;
+    background-color: #89dde0;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+#corpo figure img{
+    width: 100%;
+    border-radius: 7px 7px 0 0 ;
+}
+#corpo figure span h3{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #9a99c2;
+}
+
+#corpo figure span p{
+    padding: 5%;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.2em;
+}
+
+
+
+#corpo .btn-m-c{
+    background: #89dde0;
+    border-color: #89dde0;
+    font-family: 'nerislight', sans-serif;
+    margin-top: .5rem;
+}
+
+
+
+#rodape{
+    background-color: #89dde0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+    padding: 3% 4%;
+
+}
+
+
+#carousel-inner ul li{
+    text-align: center !important;
+    font-size: 1.5em;
+    font-family: 'nerislight', sans-serif;
+    text-align: justify;
+
+}
+
+
+#rodape #redes-sociais ul{
+    display: flex;
+    justify-content: center;
+    
+}
+#rodape #redes-sociais ul a{
+    margin: 0 1.5%;
+    color: #9a99c2;
+    font-size: 1.2em;
+    transition: 0.2s;
+
+
+}
+#rodape #redes-sociais ul a:hover{
+    color: #9a99c2;
+}
+#rodape #redes-sociais i{
+    transition: 0.2s;
+}
+
+#rodape #redes-sociais i:hover{
+    transform: scale(1.7);
+    
+}
+#rodape address{
+    color: white;
+    text-shadow: 0 0 1px #000;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+
+
+
+
+@media (min-width:360px) {
+    #logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    #btn-menu{
+        width: 70px;
+        height: 70px;
+        background:none;
+        border: solid 1px #7a7a7a;
+    }
+    #btn-menu a{
+        color: #9a99c2;
+    }
+    body{
+        font-size: 1.1em;
+    }
+
+    #menu ul{
+        margin-top: 0%;
+    }
+    
+
+}
+
+
+
+@media (min-width:768px){
+    #logo{
+        width: 150px;
+        height: 100px;
+        background-image: url(../img/Logo.png);
+        background-size: 100%;
+        margin: 0;
+        margin-left: 2%;
+    }
+    #btn-menu,#btn-fechar{
+        display: none;
+    }
+    #menu{
+        width: 78%;
+        height: 100px;
+        background:none;
+        position: relative;
+        right: 0;
+        float: right;
+    }
+    #menu ul a{
+        color: #9a99c2;
+    }
+
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 3%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #menu ul li{
+        padding: 0;
+        font-size: 0.9em;
+    }
+
+    #banner{
+        display: flex;
+    }
+    #banner #texto-banner{
+        width: 70%;
+
+    }
+
+    #botoes-banner{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #botoes-banner button{
+        width: 90%;
+        height: 40px;
+    }
+
+    #corpo figure{
+        width: 100%;
+        background-color: white;
+        border-radius: 7px;
+        margin-bottom: 10px;
+        display: flex;
+    }
+    #corpo figure img{
+        width: 50%;
+        height: 100%;
+        border-radius: 7px 0 0 7px;
+    }
+    #corpo figure span p{
+        font-size: 1.8vw;
+    }
+
+
+}
+@media (min-width:1060px){
+    #logo{
+        width: 210px;
+        height: 100px;
+    }
+    #menu{
+        width: 70%;
+    }
+
+    #banner{
+        padding: 10% 0;
+        
+    }
+
+    #banner2{
+        padding: 10% 0;
+        
+    }
+
+    #banner-contato{
+        padding: 10% 0;
+        
+    }
+
+
+    #banner h1{
+        font-size: 3.5em;
+        animation: aumentar 2s 2 alternate;
+    }
+    #banner h2{
+        font-size: 2em;
+    }
+    #botoes-banner button{
+        width: 90%;
+        height: 50px;
+    
+    }
+    #botoes-banner button i{
+        animation: girar 2s infinite alternate;
+        font-size: 3vw;
+    }
+
+    #corpo figure{
+        display: block;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+    #corpo figure img{
+        width: 100%;
+        height: auto;
+        border-radius: 7px 7px 0 0;
+    }
+    #corpo figure span p{
+        font-size: 1.3vw;
+    }
+
+    #corpo{
+        display: flex;
+    }
+    #inscrevase{
+        display: flex;
+        padding: 5%;
+    }
+
+   
+ 
+}
+
+body{
+    background-image: ();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+form{
+    width: 50%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 2%;
+}
+  
+fieldset{
+    border-radius: 10px;
+}
+  
+legend{
+    font-size: 3vmin;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+  
+label{
+    font-size: 2vmin;
+    color: silver;
+    font-weight: bold;
+}
+  
+input{
+    width: 80%;
+    height: 26px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+  
+.botoes{
+    width: auto;
+}
+  
+.contato{
+    width: 15px;
+    font-size: 2vmin;
+}
+  
+#fid-uf{
+    height: 23px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+  
+textarea{
+    height: 23px;
+    border: none;
+    border: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+img#footerimg{
+    width: 72px;
+    height: 26px;
+}
+
+
